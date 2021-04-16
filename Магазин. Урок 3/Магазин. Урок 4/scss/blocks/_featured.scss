@@ -1,0 +1,126 @@
+@import '../variables';
+
+.main__featured-title {
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    font-style: normal;
+    margin-bottom: 6px;
+}
+
+.main__featured-text {
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin-bottom: 48px;
+}
+
+.main__featured-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 48.5px;
+}
+
+
+.featured__item {
+    width: 360px;
+    min-height: 581px;
+
+    &-title {
+        font-size: 13px;
+        line-height: 16px;
+        font-style: normal;
+        margin-bottom: 12.5px;
+    }
+
+    &-wrapper {
+        position: relative;   
+        background:rgba(255,255,255, 0.7);
+
+        &:hover .featured__item-img{
+            display: block;
+        }    
+    }
+
+    &-img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        background:rgba(58, 56, 56, 0.86);
+        display: none;
+        align-items: center;
+        width: 360px;
+        height: 420px;
+    }
+
+    &-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        
+        &:active {
+            box-shadow: 5px 4px 8px 0px rgba(21, 22, 22, 0.5);;
+        }
+    }
+
+    &-text {   
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #5D5D5D;
+        margin-bottom: 18px;
+    }
+}
+
+.featured__text-wrapper {
+    background-color: var(--light-grey);
+    padding: 24px 0 20px 18px;
+}
+
+.featured__button {
+    background-color: $red;
+    width: 219px;
+    padding: 14px 38px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    border: none;
+    margin: 0 auto 95px;
+    outline: none;
+    cursor: pointer;
+    
+    .featured__button:active {
+        background-color: #db5264;
+    }
+
+    &-wrapper {
+        display: flex;
+    }
+}
+
+.featured__price {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $red;
+    font-family: Lato;
+}
