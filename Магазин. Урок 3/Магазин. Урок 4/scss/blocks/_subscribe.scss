@@ -1,0 +1,97 @@
+@import '../variables';
+
+.subscribe {
+    background-image: url(../img/subscribe-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        min-height: 448px;
+    }
+
+    &__review {
+        width: 360px;
+    }
+
+    &__img {
+        border-radius: 50%;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        font-weight: normal;
+        line-height: 24px;
+        text-align: center;
+        font-size: 20px;
+        color: #222224;
+
+        & span {
+            font-style: italic;
+        }
+    }
+    
+    &__form-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+    
+    &__form-text {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 32px;
+    } 
+    
+    &__input {
+        width: 356px;
+        height: 49px;
+        position: relative; 
+   
+
+        &-field {
+            border-radius: 40px;
+            height: 49px;
+            width: 323px;
+            border: none;
+            background: #E1E1E1;
+            padding-left: 22px;
+            outline: none;
+
+            &:hover {
+                box-shadow: 5px 4px 8px 0px rgba(34, 60, 80, 0.2);;
+            } 
+        }        
+    }
+    
+    &__submit-button {
+        position:absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 50px;
+        outline: none;
+        border: none;
+        color: #fff;
+        background-color: $red;
+        border-radius: 0 40px 40px 0;
+        margin-bottom: 156px;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px; 
+        line-height: 17px;
+        cursor: pointer;
+
+        &:active {
+            background-color: #db5264;
+        }
+    }
+}
+
+

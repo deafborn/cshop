@@ -1,0 +1,42 @@
+@import '../variables';
+
+.main__slider {
+    display: flex;
+    margin-bottom: 64px;
+
+    &-title-wrapper {
+        background-color: $pink;
+        flex-grow: 1;
+        align-items: center;
+        display: flex;
+        padding-left: 92px;
+        
+        &::before {
+            content: '';
+            width: 12px;
+            min-height: 92px;
+            background-color: $red;
+            margin-right: 16px;
+        }
+    }
+
+    &-title {
+        font-style: bold;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px; 
+        width: 377px;
+    }
+
+    &-subtitle {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 58px;
+        display: block;
+    }
+
+    &-subtitle-red {
+        color: $red;
+    }
+}
